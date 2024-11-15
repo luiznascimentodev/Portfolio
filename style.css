@@ -152,7 +152,46 @@ body {
   background-color: #7e57c2; /* Outra cor para contraste */
 }
 
+.whatsapp-button {
+  position: fixed; /* Fixa o botão em um local específico */
+  bottom: 20px; /* Distância da borda inferior */
+  right: 20px; /* Distância da borda direita */
+  z-index: 100; /* Garante que o botão fique acima de outros elementos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px; /* Largura do botão */
+  height: 80px; /* Altura do botão */
+  background-color: #25d366; /* Cor de fundo do botão (verde do WhatsApp) */
+  border-radius: 50%; /* Faz o botão ser circular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+  transition: transform 0.3s ease-in-out; /* Animação suave ao passar o mouse */
+  animation: bounce 1.5s infinite; /* Adiciona a animação de pulo */
+}
 
+/* Ícone do WhatsApp */
+.whatsapp-icon {
+  width: 50px; /* Tamanho maior do ícone */
+  height: 50px;
+}
+
+/* Efeito ao passar o mouse */
+.whatsapp-button:hover {
+  transform: scale(1.1); /* Aumenta o botão levemente */
+}
+
+/* Animação de pulo */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); /* Posição inicial */
+  }
+  40% {
+    transform: translateY(-15px); /* Move para cima */
+  }
+  60% {
+    transform: translateY(-10px); /* Move para cima levemente */
+  }
+}
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
   /* Navbar em dispositivos móveis */

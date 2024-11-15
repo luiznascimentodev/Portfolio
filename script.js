@@ -10,7 +10,3 @@ hamburgerMenu.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
 
-const video = document.getElementById('background-video');
-
-    // Define a velocidade de reprodução (1 é a velocidade normal, valores menores reduzem a velocidade)
-    video.playbackRate = 0.7; // 0.5 é metade da velocidade normal (pode ajustar esse valor)

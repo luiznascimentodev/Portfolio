@@ -103,16 +103,54 @@ body {
   transform-origin: left;
 }
 .container{
-  margin-top: 120px; /* Aumente ou diminua conforme necessário */
-  width: 98%;
-  height: 80%;
+  padding: 0.5%;
+  margin-top: 120px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px; /* Aumente ou diminua conforme necessário */
+  width: 200vh;
+  height: 100vh;
   background: #1a73e8;
-  display: block;
+  display: flex;
+  flex-direction: column;
   border-radius: 10px; /* Adicione bordas arredondadas para suavizar */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
+#inicio,
+#sobre {
+  margin: 10px 0; /* Espaçamento vertical entre os elementos */
+  width: 100%; /* Ocupa toda a largura disponível no container */
+  height: 65%; /* Ajusta a altura proporcionalmente */
+  background-color: #7d7d7d;
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+  display: flex; /* Garante flexibilidade para adicionar conteúdo interno */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+}
 
+#inicio {
+  background-color: #4a90e2; /* Cor diferenciada para destacar */
+}
+
+#imagem-inicio{
+  background-color: #dcdcdc;
+  width: 50%;
+  height: 90%;
+  margin: 5px;
+}
+
+#conteudo-inicio{
+  background-color: #dcdcdc;
+  width: 50%;
+  height: 90%;
+  margin: 5px;
+} 
+#sobre {
+  background-color: #7e57c2; /* Outra cor para contraste */
+}
 
 
 /* Estilos para dispositivos móveis */
@@ -162,20 +200,10 @@ body {
     border-radius: 3px;
   }
 
-  #principal {
+  .container {
     margin-top: 150px; /* Espaçamento maior para dispositivos menores */
     width: 90%;
     height: 80%; /* Altura ajustável */
-  }
-
-  #imagem-principal{
-    width: 50%;
-    height: 90%;
-  }
-  
-  #conteudo-principal{
-    width: 50%;
-    height: 90%;
   }
 
 }

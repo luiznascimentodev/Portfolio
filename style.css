@@ -102,30 +102,18 @@ body {
   transform: scaleX(1);
   transform-origin: left;
 }
-
-#principal {
+.container{
   margin-top: 120px; /* Aumente ou diminua conforme necessário */
-  width: 80%;
-  height: 50%;
+  width: 98%;
+  height: 80%;
   background: #1a73e8;
-  display: flex;
+  display: block;
   border-radius: 10px; /* Adicione bordas arredondadas para suavizar */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#imagem-principal{
-  margin: auto;
-  width: 50%;
-  height: 70%;
-  background-color: #dcdcdc;
-}
 
-#conteudo-principal{
-  margin: auto;
-  width: 50%;
-  height: 70%;
-  background-color: #dcdcdc;
-}
+
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) {

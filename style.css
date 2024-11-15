@@ -1,0 +1,195 @@
+/* Importação da fonte */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* Reset de margens, padding e box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+/* Estilos gerais do corpo */
+body {
+  background: radial-gradient(circle, #f0f4fa 50%, #dcdcdc 100%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding-top: 20px;
+
+}
+
+/* Navbar */
+.navbar {
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 1200px;
+ 
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 32px;
+  height: 32px;
+}
+
+.logo span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1a73e8;
+}
+
+/* Links da navegação */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin-left: auto;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #7d7d7d;
+  font-weight: 500;
+  font-size: 20px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+/* Efeito de destaque para o link ativo */
+.nav-links a.active {
+  color: #4a90e2;
+  font-weight: bold;
+  border-bottom: 2px solid #4a90e2; /* Adiciona um sublinhado no link ativo */
+}
+
+.nav-links a:hover {
+  color: #4a90e2;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #4a90e2;
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+#principal {
+  margin-top: 120px; /* Aumente ou diminua conforme necessário */
+  width: 80%;
+  height: 50%;
+  background: #1a73e8;
+  display: flex;
+  border-radius: 10px; /* Adicione bordas arredondadas para suavizar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /
+}
+
+#imagem-principal{
+  margin: auto;
+  width: 50%;
+  height: 70%;
+  background-color: #dcdcdc;
+}
+
+#conteudo-principal{
+  margin: auto;
+  width: 50%;
+  height: 70%;
+  background-color: #dcdcdc;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  /* Navbar em dispositivos móveis */
+  .navbar {
+    padding: 15px;
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  /* Links da navegação - escondidos inicialmente */
+  .nav-links {
+    display: none;
+    width: 100%;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+  }
+
+  /* Exibe os links quando o menu está ativo */
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Logo */
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  /* Menu Hambúrguer */
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .hamburger-menu div {
+    width: 30px;
+    height: 3px;
+    background-color: #1a73e8;
+    border-radius: 3px;
+  }
+
+  #principal {
+    margin-top: 150px; /* Espaçamento maior para dispositivos menores */
+    width: 90%;
+    height: 80%; /* Altura ajustável */
+  }
+
+  #imagem-principal{
+    width: 50%;
+    height: 90%;
+  }
+  
+  #conteudo-principal{
+    width: 50%;
+    height: 90%;
+  }
+
+}
+
+

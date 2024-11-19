@@ -2,51 +2,76 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="apple-touch-icon" sizes="180x180"href="./assets/favicon/apple-touch-icon.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png"/>
-    <link rel="manifest" href="./assets/favicon/site.webmanifest"/>
-    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Luiz Nascimento | Desenvolvedor Front end</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="logo">
-        <img src="./assets/favicon/favicon-32x32.png" alt="Logo" />
-        <span>Luiz Nascimento</span>
-      </div>
-      <div class="hamburger-menu">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Tecnologias</a></li>
-        <li><a href="#">Projetos</a></li>
-      </ul>
-    </nav>
- 
-  <section class="container">
-    <section id="inicio">
-      <div id="imagem-inicio"></div>
-      <div id="conteudo-inicio"></div>
-  </section>
-  <section id="sobre">
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./assets/favicon/favicon-32x32.png" alt="Logo" />
+          <span>Luiz Nascimento</span>
+        </div>
+        <div class="hamburger-menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#tecnologias">Tecnologias</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  </section>
- </section>
+    <section id="inicio" class="container">
+      <section id="inicio">
+        <div id="imagem-inicio"></div>
+        <div id="conteudo-inicio"></div>
+      </section>
+      <section id="sobre" class="espaço"></section>
+      <section id="tecnologias" class="espaço"></section>
+      <section id="projetos" class="espaço"></section>
+      <section id="contato" class="espaço"></section>
+    </section>
 
- <a href="https://wa.me/+5541984821206?text=Olá! Gostaria de mais informações." 
- class="whatsapp-button" 
- target="_blank" 
- rel="noopener noreferrer">
-<img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" 
-     alt="WhatsApp" 
-     class="whatsapp-icon" />
-</a>
+    <a
+      href="https://wa.me/+5541984821206?text=Olá! Gostaria de mais informações."
+      class="whatsapp-button"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/124/124034.png"
+        alt="WhatsApp"
+        class="whatsapp-icon"
+      />
+    </a>
+    <div class="scroll-to-top" id="scrollToTop">
+      ↑ <!-- Você pode substituir isso por um ícone -->
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
